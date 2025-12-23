@@ -7,12 +7,16 @@ A collection of AI agents built using the Agno framework for various automation 
 ### 1. Travel Planning Agent
 An intelligent travel planning system that creates detailed itineraries for European trips with budget optimization and real-time information.
 
+### 2. Movie Recommendation Agent
+An AI-powered movie recommendation system that suggests films from Bollywood, Tollywood, and Hollywood based on user preferences and current 2024-2025 releases.
+
 ## 📋 Prerequisites
 
 Before running any project, install the required dependencies:
 
 ```bash
 pip install -U agno openai exa_py httpx duckduckgo_search rich pydantic
+pip install sqlalchemy fastapi[standard]
 ```
 
 ## 🔑 API Keys Required
@@ -32,6 +36,9 @@ AI_AGENTS_USING_AGNO/
 │   ├── maps_tools.py           # Google Maps integration
 │   ├── prompt.py               # Agent prompts and instructions
 │   └── README.md               # Project-specific documentation
+├── Movie_Recommendation_Agent/
+│   ├── agent_movie_recommendation.py # Movie recommendation agent
+│   └── README.md                      # Project-specific documentation
 ├── README.md                   # This file
 └── requirements.txt            # Dependencies
 ```
@@ -74,6 +81,14 @@ cd Travel_Planning_Agent
 python Simple_Travel_Planner.py
 ```
 
+### Movie Recommendation Agent
+
+**AI-Powered Movie Recommendations**
+```bash
+cd Movie_Recommendation_Agent
+python agent_movie_recommendation.py
+```
+
 ## 📝 Features
 
 ### Travel Planning Agent
@@ -84,6 +99,15 @@ python Simple_Travel_Planner.py
 - ✅ Family-friendly recommendations
 - ✅ Booking links and resources
 - ✅ Weather considerations
+
+### Movie Recommendation Agent
+- ✅ Multi-industry coverage (Bollywood, Tollywood, Hollywood)
+- ✅ Current 2024-2025 movie releases
+- ✅ AI-powered recommendations with EXA search
+- ✅ Offline mode when API quota exceeded
+- ✅ Date night and romantic movie suggestions
+- ✅ Detailed movie information and streaming links
+- ✅ Rich console interface with markdown formatting
 
 ## 🤝 Contributing
 
@@ -99,6 +123,8 @@ More AI agent examples will be added to this repository:
 - Customer Service Agent
 - Data Analysis Agent
 - Content Creation Agent
+- E-commerce Assistant Agent
+- Social Media Management Agent
 - And more...
 
 ---
