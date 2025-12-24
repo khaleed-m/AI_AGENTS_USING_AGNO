@@ -10,7 +10,10 @@ An intelligent travel planning system that creates detailed itineraries for Euro
 ### 2. Movie Recommendation Agent
 An AI-powered movie recommendation system that suggests films from Bollywood, Tollywood, and Hollywood based on user preferences and current 2024-2025 releases.
 
-### 3. Create Own Tools
+### 3. Blog Post Generator
+An advanced AI-powered blog post generator that creates comprehensive, professional blog posts with real links and research-driven content using Groq AI.
+
+### 4. Create Own Tools
 A comprehensive guide and examples for creating custom tools and toolkits in the Agno framework, including function-based tools and interactive calculators.
 
 ## 📋 Prerequisites
@@ -23,6 +26,10 @@ pip install sqlalchemy fastapi[standard]
 ```
 
 ## 🔑 API Keys Required
+
+### For Blog Post Generator:
+- **Groq API Key**: Get free key from [Groq Console](https://console.groq.com/)
+- **Google API Key** (optional): For Gemini integration
 
 ### For Travel Planning Agent:
 - **OpenAI API Key**: Get from [OpenAI Platform](https://platform.openai.com/api-keys)
@@ -42,6 +49,14 @@ AI_AGENTS_USING_AGNO/
 ├── Movie_Recommendation_Agent/
 │   ├── agent_movie_recommendation.py # Movie recommendation agent
 │   └── README.md                      # Project-specific documentation
+├── Blog_Post_Generator/
+│   ├── working_blog_generator.py    # Recommended AI blog generator
+│   ├── advanced_blog_generator.py   # Full-featured with multi-search
+│   ├── simple_blog_generator.py     # Basic version (no API required)
+│   ├── examples/                    # Sample generated blog posts
+│   │   ├── blog_ai_developer.md
+│   │   └── blog_machine_learning.md
+│   └── README.md                    # Blog generator documentation
 ├── Create_Own_Tool(Func tool & Toolkit)/
 │   ├── Function_Tool.py        # Simple function-based tool example
 │   ├── math_Tookit.py          # Custom MathToolkit class
@@ -72,6 +87,7 @@ pip install -r requirements.txt
 export OPENAI_API_KEY="your_openai_key_here"
 export EXA_API_KEY="your_exa_key_here"
 export GOOGLE_MAPS_API_KEY="your_maps_key_here"
+export GROQ_API_KEY="your_groq_key_here"
 ```
 
 ## 🎯 Usage
@@ -96,6 +112,26 @@ python Simple_Travel_Planner.py
 ```bash
 cd Movie_Recommendation_Agent
 python agent_movie_recommendation.py
+```
+
+### Blog Post Generator
+
+**AI-Powered Blog Generation (recommended)**
+```bash
+cd Blog_Post_Generator
+python working_blog_generator.py
+```
+
+**Advanced Version with Multi-Topic Research**
+```bash
+cd Blog_Post_Generator
+python advanced_blog_generator.py
+```
+
+**Simple Version (no API required)**
+```bash
+cd Blog_Post_Generator
+python simple_blog_generator.py
 ```
 
 ### Create Own Tools
@@ -138,6 +174,17 @@ python test_tools_locally.py
 - ✅ Detailed movie information and streaming links
 - ✅ Rich console interface with markdown formatting
 
+### Blog Post Generator
+- ✅ AI-powered content generation using Groq (free Llama 3)
+- ✅ Real working links from reputable sources
+- ✅ Professional 1200+ word articles
+- ✅ SEO-optimized content structure
+- ✅ Multiple generator versions (advanced, working, simple)
+- ✅ Publication-ready for Medium, LinkedIn, company blogs
+- ✅ Multi-topic research and analysis
+- ✅ Natural link integration within content
+- ✅ Example blog posts included
+
 ### Create Own Tools
 - ✅ Function-based tool creation examples
 - ✅ Custom toolkit development guide
@@ -158,6 +205,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🔮 Future Projects
 
 More AI agent examples will be added to this repository:
+- ~~Blog Post Generator~~ ✅ **Added**
 - Customer Service Agent
 - Data Analysis Agent
 - Content Creation Agent
