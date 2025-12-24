@@ -19,6 +19,9 @@ A comprehensive guide and examples for creating custom tools and toolkits in the
 ### 5. SQLite Memory Agent
 A simple AI agent demonstration using Ollama with local chat interface, showcasing basic agent setup and conversation handling.
 
+### 6. SQLite Database Agent
+An AI agent that interacts with SQLite databases using the Chinook sample database, demonstrating SQL query generation and database analysis capabilities.
+
 ## 📋 Prerequisites
 
 Before running any project, install the required dependencies:
@@ -69,6 +72,9 @@ AI_AGENTS_USING_AGNO/
 ├── agent_sqlite_memory/
 │   ├── demo.py                 # Simple Ollama agent with chat interface
 │   └── load_storage.py         # SQLite storage configuration
+├── agno_sql_agent/
+│   ├── sqlite_agent.py         # SQLite database agent with Chinook DB
+│   └── Chinook_Sqlite.sqlite   # Sample Chinook database
 ├── README.md                   # This file
 └── requirements.txt            # Dependencies
 ```
@@ -174,6 +180,20 @@ ollama pull llama3.2:3b
 ollama serve
 ```
 
+### SQLite Database Agent
+
+**AI-Powered Database Queries**
+```bash
+cd agno_sql_agent
+python sqlite_agent.py
+```
+
+**Prerequisites:** Make sure Ollama is running:
+```bash
+ollama pull llama3.2:3b
+ollama serve
+```
+
 ## 📝 Features
 
 ### Travel Planning Agent
@@ -221,6 +241,22 @@ ollama serve
 - ✅ No API keys required (uses local Ollama)
 - ✅ Conversation handling
 - ✅ Minimal dependencies
+
+### SQLite Database Agent
+- ✅ SQLite database integration with Chinook sample DB
+- ✅ AI-powered SQL query generation
+- ✅ Database analysis and insights
+- ✅ Multiple query execution
+- ✅ Uses local Ollama (no API keys required)
+- ✅ Real database operations and results
+
+## 🔗 Useful Resources
+
+🖥️ **Download Chinook SQLite database:** https://github.com/lerocha/chinook-database
+
+🖥️ **Inloop SQL Viewer:** http://inloop.github.io/sqlite-viewer/
+
+🖥️ **Agno website:** https://www.agno.com/
 
 ## 🤝 Contributing
 
