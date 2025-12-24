@@ -22,6 +22,9 @@ A simple AI agent demonstration using Ollama with local chat interface, showcasi
 ### 6. SQLite Database Agent
 An AI agent that interacts with SQLite databases using the Chinook sample database, demonstrating SQL query generation and database analysis capabilities.
 
+### 7. Advanced Web Search Agent
+An intelligent web search agent with rich console interface, search history, query enhancement, and multiple search modes including news, research, and trend analysis.
+
 ## 📋 Prerequisites
 
 Before running any project, install the required dependencies:
@@ -75,6 +78,10 @@ AI_AGENTS_USING_AGNO/
 ├── agno_sql_agent/
 │   ├── sqlite_agent.py         # SQLite database agent with Chinook DB
 │   └── Chinook_Sqlite.sqlite   # Sample Chinook database
+├── agno_ai_agent/
+│   ├── demo.py                 # Simple interactive web search agent
+│   ├── advanced_search_agent.py # Advanced web search with rich UI
+│   └── README.md               # Web search agent documentation
 ├── README.md                   # This file
 └── requirements.txt            # Dependencies
 ```
@@ -194,6 +201,27 @@ ollama pull llama3.2:3b
 ollama serve
 ```
 
+### Advanced Web Search Agent
+
+**Interactive Web Search with Rich UI**
+```bash
+cd agno_ai_agent
+python advanced_search_agent.py
+```
+
+**Simple Web Search Agent**
+```bash
+cd agno_ai_agent
+python demo.py
+```
+
+**Prerequisites:** Install Rich library and make sure Ollama is running:
+```bash
+pip install rich
+ollama pull llama3.2:3b
+ollama serve
+```
+
 ## 📝 Features
 
 ### Travel Planning Agent
@@ -249,6 +277,16 @@ ollama serve
 - ✅ Multiple query execution
 - ✅ Uses local Ollama (no API keys required)
 - ✅ Real database operations and results
+
+### Advanced Web Search Agent
+- ✅ Rich console interface with colors and formatting
+- ✅ Smart query enhancement (news, research, trends, compare)
+- ✅ Search history tracking and management
+- ✅ Multiple search modes and commands
+- ✅ Real-time web search with DuckDuckGo
+- ✅ Progress indicators and error handling
+- ✅ Uses local Ollama (no API keys required)
+- ✅ Interactive help system and examples
 
 ## 🔗 Useful Resources
 
