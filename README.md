@@ -10,6 +10,9 @@ An intelligent travel planning system that creates detailed itineraries for Euro
 ### 2. Movie Recommendation Agent
 An AI-powered movie recommendation system that suggests films from Bollywood, Tollywood, and Hollywood based on user preferences and current 2024-2025 releases.
 
+### 3. Create Own Tools
+A comprehensive guide and examples for creating custom tools and toolkits in the Agno framework, including function-based tools and interactive calculators.
+
 ## 📋 Prerequisites
 
 Before running any project, install the required dependencies:
@@ -39,6 +42,12 @@ AI_AGENTS_USING_AGNO/
 ├── Movie_Recommendation_Agent/
 │   ├── agent_movie_recommendation.py # Movie recommendation agent
 │   └── README.md                      # Project-specific documentation
+├── Create_Own_Tool(Func tool & Toolkit)/
+│   ├── Function_Tool.py        # Simple function-based tool example
+│   ├── math_Tookit.py          # Custom MathToolkit class
+│   ├── Test_Toolkit.py         # AI agent testing with custom toolkit
+│   ├── test_tools_locally.py   # Interactive calculator (no API required)
+│   └── README.md               # Tool creation documentation
 ├── README.md                   # This file
 └── requirements.txt            # Dependencies
 ```
@@ -89,6 +98,26 @@ cd Movie_Recommendation_Agent
 python agent_movie_recommendation.py
 ```
 
+### Create Own Tools
+
+**Test Custom Function Tool:**
+```bash
+cd "Create_Own_Tool(Func tool & Toolkit)"
+python Function_Tool.py
+```
+
+**Test Custom Toolkit with AI:**
+```bash
+cd "Create_Own_Tool(Func tool & Toolkit)"
+python Test_Toolkit.py
+```
+
+**Interactive Calculator (No API required):**
+```bash
+cd "Create_Own_Tool(Func tool & Toolkit)"
+python test_tools_locally.py
+```
+
 ## 📝 Features
 
 ### Travel Planning Agent
@@ -108,6 +137,15 @@ python agent_movie_recommendation.py
 - ✅ Date night and romantic movie suggestions
 - ✅ Detailed movie information and streaming links
 - ✅ Rich console interface with markdown formatting
+
+### Create Own Tools
+- ✅ Function-based tool creation examples
+- ✅ Custom toolkit development guide
+- ✅ Interactive calculator with user input
+- ✅ Local testing without API requirements
+- ✅ Mathematical operations toolkit
+- ✅ Error handling and validation
+- ✅ Step-by-step tool integration tutorials
 
 ## 🤝 Contributing
 
