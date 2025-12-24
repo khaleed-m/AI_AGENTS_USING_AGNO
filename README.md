@@ -16,6 +16,9 @@ An advanced AI-powered blog post generator that creates comprehensive, professio
 ### 4. Create Own Tools
 A comprehensive guide and examples for creating custom tools and toolkits in the Agno framework, including function-based tools and interactive calculators.
 
+### 5. SQLite Memory Agent
+A simple AI agent demonstration using Ollama with local chat interface, showcasing basic agent setup and conversation handling.
+
 ## 📋 Prerequisites
 
 Before running any project, install the required dependencies:
@@ -63,6 +66,9 @@ AI_AGENTS_USING_AGNO/
 │   ├── Test_Toolkit.py         # AI agent testing with custom toolkit
 │   ├── test_tools_locally.py   # Interactive calculator (no API required)
 │   └── README.md               # Tool creation documentation
+├── agent_sqlite_memory/
+│   ├── demo.py                 # Simple Ollama agent with chat interface
+│   └── load_storage.py         # SQLite storage configuration
 ├── README.md                   # This file
 └── requirements.txt            # Dependencies
 ```
@@ -154,6 +160,20 @@ cd "Create_Own_Tool(Func tool & Toolkit)"
 python test_tools_locally.py
 ```
 
+### SQLite Memory Agent
+
+**Simple Ollama Chat Agent**
+```bash
+cd agent_sqlite_memory
+python demo.py
+```
+
+**Prerequisites:** Make sure Ollama is running:
+```bash
+ollama pull llama3.2:3b
+ollama serve
+```
+
 ## 📝 Features
 
 ### Travel Planning Agent
@@ -193,6 +213,14 @@ python test_tools_locally.py
 - ✅ Mathematical operations toolkit
 - ✅ Error handling and validation
 - ✅ Step-by-step tool integration tutorials
+
+### SQLite Memory Agent
+- ✅ Simple Ollama integration
+- ✅ Local chat interface
+- ✅ Basic agent setup demonstration
+- ✅ No API keys required (uses local Ollama)
+- ✅ Conversation handling
+- ✅ Minimal dependencies
 
 ## 🤝 Contributing
 
